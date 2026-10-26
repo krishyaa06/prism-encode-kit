@@ -1,0 +1,19 @@
+    <section class="card">
+      <div class="card-title"><div class="tabs" id="codec"></div><span class="pill" id="detect"></span></div>
+      <div class="grid g2 io">
+        <label class="field">Plain text<textarea id="plain" spellcheck="false"></textarea></label>
+        <label class="field">Encoded <span class="err" id="err"></span><textarea id="enc" spellcheck="false"></textarea></label>
+      </div>
+      <div class="row acts"><button class="btn small" id="cpP">Copy plain</button><button class="btn small" id="cpE">Copy encoded</button><span class="spacer"></span><span class="muted small" id="len"></span></div>
+    </section>
+    <section class="grid g2 below">
+      <div class="card">
+        <div class="card-title"><h2>Hashes</h2><span class="muted small">of the plain text</span></div>
+        <div id="hashes" class="hashes"></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><h2>File → Data URL / hash</h2></div>
+        <label class="drop" id="drop" for="file"><b>Drop a file</b><span>or click to choose · stays on your device</span></label><input type="file" id="file" hidden />
+        <div id="fileOut" class="file-out"></div>
+      </div>
+    </section>

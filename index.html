@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism Encode Kit · Prism Protocol</title>
+  <meta name="description" content="Two-way Base64/URL/Hex/HTML/Binary/Unicode encoder with SHA hashes and file to data URL, fully offline." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism Encode Kit · Prism Protocol" />
+  <meta property="og:description" content="Two-way Base64/URL/Hex/HTML/Binary/Unicode encoder with SHA hashes and file to data URL, fully offline." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#F5C561;--accent-2:#00D2FF}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>Encode Kit</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-encode-kit" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">🔣 Dev Tools</p>
+      <h1>Encode, decode, <em>hash.</em></h1>
+      <p class="lead">Base64, URL, Hex, HTML entities, Binary, Unicode and ROT13 in both directions, plus SHA hashes and file-to-data-URL. Unicode-safe and offline.</p>
+    </section>
+    <section class="card">
+      <div class="card-title"><div class="tabs" id="codec"></div><span class="pill" id="detect"></span></div>
+      <div class="grid g2 io">
+        <label class="field">Plain text<textarea id="plain" spellcheck="false"></textarea></label>
+        <label class="field">Encoded <span class="err" id="err"></span><textarea id="enc" spellcheck="false"></textarea></label>
+      </div>
+      <div class="row acts"><button class="btn small" id="cpP">Copy plain</button><button class="btn small" id="cpE">Copy encoded</button><span class="spacer"></span><span class="muted small" id="len"></span></div>
+    </section>
+    <section class="grid g2 below">
+      <div class="card">
+        <div class="card-title"><h2>Hashes</h2><span class="muted small">of the plain text</span></div>
+        <div id="hashes" class="hashes"></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><h2>File → Data URL / hash</h2></div>
+        <label class="drop" id="drop" for="file"><b>Drop a file</b><span>or click to choose · stays on your device</span></label><input type="file" id="file" hidden />
+        <div id="fileOut" class="file-out"></div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism Encode Kit · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-encode-kit" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "prism-encode-kit",
+  "version": "1.0.0",
+  "description": "Two-way Base64/URL/Hex/HTML/Binary/Unicode encoder with SHA hashes and file to data URL, fully offline.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "base64",
+    "url-encoder",
+    "hex",
+    "sha256",
+    "hash",
+    "encoding",
+    "developer-tools",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-encode-kit.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-encode-kit/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}
